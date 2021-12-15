@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+       Scanner scan = new Scanner(System.in);
+       int n = scan.nextInt();
+       int a = 1;
+       int z = n;
+       for(int b=1;b<=n;b++)
+       {
+           
+           for(int c =1;c<b;c++)
+           System.out.print(a+"*");
+           System.out.println(a);
+           a++;
+       }
+       a--;
+       for(int b=1;b<=n;b++)
+       {
+           
+           for(int c =1;c<z;c++)
+           System.out.print(a+"*");
+           System.out.println(a);
+           a--;
+           z--;
+       }
+    }
+}
